@@ -1,0 +1,31 @@
+{
+  "name": "okta-oidc-una",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@okta/oidc-middleware": "0.0.6",
+    "consolidate": "^0.15.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.16.0",
+    "express-session": "^1.15.6",
+    "sanitize-html": "^2.13.1",
+    "socket.io": "^4.8.0",
+    "swig": "^1.4.2"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "env-cmd -f .env.dev node server.js",
+    "test": "mocha"
+  },
+  "author": "UNA",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "chai-http": "^5.0.0",
+    "mocha": "^10.2.0",
+    "sinon": "^19.0.2",
+    "supertest": "^7.0.0"
+  }
+}
